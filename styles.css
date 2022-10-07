@@ -124,7 +124,7 @@ p {
     text-align: center;
 }
 
-#numbers-input {
+#length-input {
     background-color: #334154;
     border: none;
     height: 34px;
@@ -134,9 +134,7 @@ p {
     font-size: 16px;
     border-radius: 6px;;
 }
-/* #length-label {
 
-} */
 
 
 
