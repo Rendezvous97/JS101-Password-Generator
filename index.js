@@ -23,7 +23,7 @@ function getPassword(){
         if(symbolsInput & numbersInput){
             randomIndex = Math.floor(Math.random() * characters.length)
             newPassword += characters[randomIndex]
-            console.log(newArray)
+            console.log(characters)
         } else if(symbolsInput && !numbersInput){
             let newArray = characters.filter(x => !numbers.includes(x))
             randomIndex = Math.floor(Math.random() * newArray.length)
