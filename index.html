@@ -16,9 +16,11 @@
                 <div id="main-container">
                     <h1 id="title">Generate a<span id="title-line-two">random password</span></h1>
                     <h4 id ="subtitle">Never use an insecure password again.</h4>
-                    <button id="generate-btn" onclick="buttonClick()">Generate passwords</button>
+                    <div class="results-container">
+                        <button id="generate-btn" onclick="buttonClick()">Generate passwords</button>
+                    </div>
                     <div id="divider"></div>
-                    <div id="results-container">
+                    <div class="results-container utility">
                         <div class="results" id="result-one">
                             <p class="password" id="password-one"></p>
                         </div>
@@ -26,6 +28,29 @@
                             <p class="password" id="password-two"></p>
                         </div>
                     </div>
+                    <div class="utility" id="pref-container">
+                        <div class="prefs" id="length-container">
+                            <p id="length-label"># of Characters</p>
+                            <input id="numbers-input" type="number" min=8 max=15 value=10>
+                        </div>
+                        <div class="prefs" id="symbols-container">
+                            <p id="symbols-label">Allow Symbols</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+
+                        </div>
+                        <div class="prefs" id="numbers-container">
+                            <p id="numbers-label">Allow Numbers</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

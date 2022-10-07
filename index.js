@@ -12,7 +12,9 @@ passwordTwoEl = document.getElementById("password-two")
 function getPassword(){
     let newPassword = ""
     // console.log(newPassword)
-    for (let count=0; count<15; count++){
+    maxCount = document.getElementById("numbers-input").value
+    console.log(maxCount)
+    for (let count=0; count<maxCount; count++){
         randomIndex = Math.floor(Math.random() * characters.length)
         newPassword += characters[randomIndex]
     }
@@ -24,5 +26,4 @@ function buttonClick(){
     passwordOneEl.textContent = getPassword()
     passwordTwoEl.textContent = getPassword()
 }
-
 
