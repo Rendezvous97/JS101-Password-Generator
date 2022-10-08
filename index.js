@@ -44,8 +44,6 @@ function getPassword(){
         
     }
 
-        // randomIndex = Math.floor(Math.random() * characters.length)
-        // newPassword += characters[randomIndex]
     return newPassword
 }
 
@@ -54,3 +52,13 @@ function buttonClick(){
     passwordTwoEl.textContent = getPassword()
 }
 
+
+function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+}
